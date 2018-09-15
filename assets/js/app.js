@@ -1,7 +1,7 @@
 var answers = ["dog", "cat", "bird"];
 
-var wins = 0;
-var lost = 0;
+var correcto = 0;
+var wrong = 0;
 
 function start() {
     $("#starting").hide();
@@ -14,17 +14,44 @@ start();
 $("#start").click(function () {
     $("#starting").show();
     $("#start").hide();
+    wrong === 0;
+    correcto == 0;
 });
 
 $("#submit").click(function () {
-    $("#starting").hide();
-    $("#outcome").show();
+
 })
 
-$("#retake").click(function() {
+$("#retake").click(function () {
     $("#start").show();
     start();
 })
+
+function correct(){
+    correcto++;
+    $("#correct").text(correcto);
+}
+
+function incorrect(){
+    wrong++;
+    $("#incorrect").text(wrong)
+}
+
+function submit() {
+    $('#submit').click(function () {
+        $("#starting").hide();
+        $("#outcome").show();
+        var isChecked = $('#rdSelect').prop('checked');
+        
+        if (isChecked == true) {
+            correct();
+        }
+        else {
+            incorrect();
+        }
+    });
+};
+submit();
 
 // function checkScore () {
 //     if 
