@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center">Totally Trivial Trivia!</h1>
+        </div>
+        <div class="text-center">
+
+            <button id="start">Start Game</button>
+
+        </div>
+        <div id="starting">
+            <h3>Time remaining: </h3>
+            <div class="time-remaining"></div>
+            </h3>
+            <h3>What was the first full length CGI movie?</h3>
+            <!-- create radio buttons -->
+            <div>
+                <input type="radio" id="cat" name="q1" checked />
+                <label for="cat">cat</label>
+            </div>
+
+            <div>
+                <input type="radio" id="dewey" name="q1" />
+                <label for="dewey">Dewey</label>
+            </div>
+
+            <div>
+                <input type="radio" id="louie" name="q1" />
+                <label for="louie">Louie</label>
+            </div>
+            <div>
+                <input type="radio" class="dog" name="q1">
+                <label for="dog">Dog</label>
+            </div>
+
+            <h3>Which of these is NOT a name of one of the Spice Girls?</h3>
+            <!-- create radio buttons -->
+            <div>
+                <input type="radio" id="cat" name="q2" checked />
+                <label for="cat">cat</label>
+            </div>
+
+            <div>
+                <input type="radio" id="dewey" name="q2" />
+                <label for="dewey">Dewey</label>
+            </div>
+
+            <div>
+                <input type="radio" id="louie" name="q2" />
+                <label for="louie">Louie</label>
+            </div>
+            <div>
+                <input type="radio" class="dog" name="q2">
+                <label for="dog">Dog</label>
+            </div>
+            <h3>Which NBA team won the most titles in the 90's?</h3>
+            <!-- create radio buttons -->
+            <div>
+                <input type="radio" id="cat" name="q3" checked />
+                <label for="cat">cat</label>
+            </div>
+
+            <div>
+                <input type="radio" id="dewey" name="q3" />
+                <label for="dewey">Dewey</label>
+            </div>
+
+            <div>
+                <input type="radio" id="louie" name="q3" />
+                <label for="louie">Louie</label>
+            </div>
+            <div>
+                <input type="radio" class="dog" name="q3">
+                <label for="dog">Dog</label>
+            </div>
+
+            <button id="submit" type="button" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+        <div id="outcome">
+            <h1>You got them right!</h1>
+            <button id="retake">Retake Test</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+
+</html>
